@@ -27,10 +27,10 @@ function deleteLastItem() { // runs when the user presses 'd'
 function changeSpecificItem() { // runs when the user presses 'c'
   // TASK 3: Write code that allows the user to change a specific item on the list. The first question should be "Which item do you want to change?" and for example, if the answer is 1, it should change the first item on the list. The second question should be "What would you like to change it to?".
   // write your code BELOW this line
-  var changeItem = prompt("What would you like to change?");
- var changeItem2 = prompt("What would you like to change it to?");
-  groceryList.shift [changeItem] = changeItem2;
-  
+ var intialSpecificItem = prompt("Which item do you want to change (use a munber)");
+ //console.log(asking number)
+ var changeSpecificItem = prompt("What would like change it to?" )
+  groceryList[intialSpecificItem - 1] = changeSpecificItem;
  // var changeItem = groceryList.s hift();
   
   // write your code ABOVE this line
@@ -39,8 +39,10 @@ function changeSpecificItem() { // runs when the user presses 'c'
 function removeSpecificItem() { // runs when the user presses 'r'
   // EXTRA CREDIT: Write code that allows the user to remove a specific item on the list. For example, if the answer is 2, it should remove the second item on the list. HINT: this requires using Google, as this concept has not been taught yet.
   // write your code BELOW this line
-var specificItem = prompt("What would you like to remove?");
-groceryList.slice[specificItem]
+var specificItem = prompt("Which item would you like to remove? (Use a number)");
+varName.splice(vaule you wanted, how much you want to delete);
+groceryList[intialSpecificItem-1] = groceryList.pop();
+
   // write your code ABOVE this line
 }
 
